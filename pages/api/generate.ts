@@ -9,7 +9,7 @@ const generateAction = async (req, res) => {
     `https://api-inference.huggingface.co/models/goudete/experiment`,
     {
       headers: {
-        Authorization: `Bearer ${consts.HF_AUTH_KEY}`,
+        'Authorization': `Bearer ${consts.HF_AUTH_KEY}`,
         'Content-Type': 'application/json',
         'x-use-cache': 'false'
       },
